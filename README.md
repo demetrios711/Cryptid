@@ -9,7 +9,7 @@ Cryptid, a Wickr clone, is a
 ### 2. New account creation, login, and guest/demo login (04/04/2018, 2 days)
   + Users can sign up, sign in, log out
   + Users can use a demo login to try the site
-  + Users can't use certain features without logging in (creating messages & likes)
+  + Users can't use certain features without logging in (sending messages and adding contacts)
 
 ### 3. Messages (04/06/2018, 2 days)
   + Logged in users can send messages
@@ -26,8 +26,8 @@ Cryptid, a Wickr clone, is a
 | `username`        | string    | not null, indexed, unique |
 | `email`           | string    | not null, indexed, unique |
 | `username`        | string    | not null, indexed, unique |
-| `user_public`     | string    | not null, indexed, unique |
-| `user_private`    | string    | not null, indexed, unique |
+| `public_digest`   | string    | not null, indexed, unique |
+| `private_digest`  | string    | not null, indexed, unique |
 | `password_digest` | string    | not null                  |
 | `updated_at`      | datetime  | not null                  |
 | `session_token`   | string    | not null, indexed, unique |
