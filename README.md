@@ -23,15 +23,27 @@ Cryptid, a Wickr clone, is a
 | column name       | data type | details                   |
 |:------------------|:---------:|:--------------------------|
 | `id`              | integer   | not null, primary key     |
-| `username`        | string    | not null, indexed         |
-| `email`           | string    | not null, indexed, unique |         
+| `username`        | string    | not null, indexed, unique |
+| `email`           | string    | not null, indexed, unique |
+| `username`        | string    | not null, indexed, unique |
+| `user_public`     | string    | not null, indexed, unique |
+| `user_private`    | string    | not null, indexed, unique |
 | `password_digest` | string    | not null                  |
+| `updated_at`      | datetime  | not null                  |
 | `session_token`   | string    | not null, indexed, unique |
 | `created_at`      | datetime  | not null                  |
 | `updated_at`      | datetime  | not null                  |
+| `last_login`      | datetime  | not null                  |
 
 + index on `username, unique: true`
 + index on `session_token, unique: true`
+
+## 'Local Storage'
+| column name       | data type | details                   |
+|:------------------|:---------:|:--------------------------|
+| `hw_identifier`   | integer   | not null, primary key     |
+
+
 
 ## Frontend Routes
 Our components are organized as follows:
