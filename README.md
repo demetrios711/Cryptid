@@ -55,7 +55,7 @@ Bonus: Notifications
 | `message`         | string    | not null, indexed, unique |
 | `expir_time`      | datetime  |                           |
 | `deto_time`       | datetime  |                           |
-| `reciever`        | string    | not null, indexed, unique |
+| `reciever`        | string    | not null, indexed,        |
 
 ## 'Local Storage'
 | column name       | data type | details                   |
