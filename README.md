@@ -54,6 +54,7 @@ Bonus: Notifications
 | `user_id`         | integer   | not null, primary key     |
 | `message`         | string    | not null, indexed, unique |
 | `expir_time`      | datetime  |                           |
+| `deto_time`       | datetime  |                           |
 | `reciever`        | string    | not null, indexed, unique |
 
 ## 'Local Storage'
