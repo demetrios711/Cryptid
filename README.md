@@ -43,7 +43,16 @@ Cryptid, a Wickr clone, is a
 |:------------------|:---------:|:--------------------------|
 | `hw_identifier`   | integer   | not null, primary key     |
 
+## `message`
+| column name       | data type | details                   |
+|:------------------|:---------:|:--------------------------|
+| `user_id`         | integer   | not null, primary key     |
+| `message`         | string    | not null, indexed, unique |
+| `expir_time`      | datetime  | not null, indexed, unique |
+| `reciever`        | string    | not null, indexed, unique |
 
++ index on `username, unique: true`
++ index on `session_token, unique: true`
 
 ## Frontend Routes
 Our components are organized as follows:
