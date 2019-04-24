@@ -15,15 +15,16 @@ Cryptid, a Wickr clone, is a
   + Logged in users can send messages
   + Logged in users can view sent messages
 
+### 4. Messages Encryption (04/06/2018, 2 days)
+
+### 5. Group Message (04/06/2018, 2 days)
+
+
 ### 4. Production README (04/13/2018, 0.5 days)
 
 
 Slack
-Live chat
-Channels
-Direct Message
 Teams or multi-person DM
-Bonus: Search Messages
 Bonus: Notifications
 
 
@@ -55,7 +56,7 @@ Bonus: Notifications
 | `message`         | string    | not null, indexed, unique |
 | `expir_time`      | datetime  |                           |
 | `deto_time`       | datetime  |                           |
-| `reciever`        | string    | not null, indexed,        |
+| `reciever`        | string    | not null, indexed, unique |
 
 ## 'Local Storage'
 | column name       | data type | details                   |
