@@ -17,6 +17,16 @@ Cryptid, a Wickr clone, is a
 
 ### 4. Production README (04/13/2018, 0.5 days)
 
+
+Slack
+Live chat
+Channels
+Direct Message
+Teams or multi-person DM
+Bonus: Search Messages
+Bonus: Notifications
+
+
 # Database Schema
 
 ## `users`
@@ -43,7 +53,7 @@ Cryptid, a Wickr clone, is a
 |:------------------|:---------:|:--------------------------|
 | `user_id`         | integer   | not null, primary key     |
 | `message`         | string    | not null, indexed, unique |
-| `expir_time`      | datetime  | not null, indexed, unique |
+| `expir_time`      | datetime  |                           |
 | `reciever`        | string    | not null, indexed, unique |
 
 ## 'Local Storage'
