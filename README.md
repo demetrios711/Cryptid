@@ -4,7 +4,7 @@
 
 Cryptid, a Wickr clone, is a
 
-### 1. Hosting on Heroku (04/03/2018)
+### 1. Hosting on Heroku (05/01/2018)
 
 ### 2. New account creation, login, and guest/demo login (04/04/2018, 2 days)
   + Users can sign up, sign in, log out
