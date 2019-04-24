@@ -38,11 +38,6 @@ Cryptid, a Wickr clone, is a
 + index on `username, unique: true`
 + index on `session_token, unique: true`
 
-## 'Local Storage'
-| column name       | data type | details                   |
-|:------------------|:---------:|:--------------------------|
-| `hw_identifier`   | integer   | not null, primary key     |
-
 ## `message`
 | column name       | data type | details                   |
 |:------------------|:---------:|:--------------------------|
@@ -50,6 +45,12 @@ Cryptid, a Wickr clone, is a
 | `message`         | string    | not null, indexed, unique |
 | `expir_time`      | datetime  | not null, indexed, unique |
 | `reciever`        | string    | not null, indexed, unique |
+
+## 'Local Storage'
+| column name       | data type | details                   |
+|:------------------|:---------:|:--------------------------|
+| `hw_identifier`   | integer   | not null, primary key     |
+
 
 + index on `username, unique: true`
 + index on `session_token, unique: true`
