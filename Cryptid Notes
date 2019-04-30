@@ -1,0 +1,34 @@
+Notes --- 
+
+https://github.com/plataformatec/devise
+
+
+Unique HW identifier will be stored in local messstorage.
+
+Username used to generate keys.
+Email 2FA  
+password_digest = first step auth
+decrypt_pass_digest = second step auth
+session_token
+
+remove updated at, created at - too much information.
+
+private_digest = private key || PK
+message_id || FK
+
+message
+
+user_id
+
+
+1. Create account (Username/Password)
+  a. password_digest gets created
+  b. public_digest (public-key, gets generated from username) (Stored in users)
+  c. private_digest (private-key, gets generated at same time) (Stored in private_checks)
+2. Log in (first time)
+  a. Create decrypt_pass_digest (password_2)
+  b. session_token gets created here
+3. Add contact, contacts username gets added to contactslist
+4.  
+
+rails g devise User username:string:uniq email:string:uniq public_digest:text password_digest:string session_token:uniq last_login:datetimed
