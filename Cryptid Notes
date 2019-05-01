@@ -32,3 +32,5 @@ user_id
 4.  
 
 rails g devise User username:string:uniq email:string:uniq public_digest:text password_digest:string session_token:uniq last_login:datetimed
+https://iridakos.com/tutorials/2019/04/04/creating-chat-application-rails-websockets.html
+https://medium.freecodecamp.org/simple-chat-application-in-node-js-using-express-mongoose-and-socket-io-ee62d94f5804
