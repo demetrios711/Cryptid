@@ -1,5 +1,39 @@
 {
   "name": "Cryptid",
-  "private": true,
-  "dependencies": {}
+  "private": false,
+  "dependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "3.3.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-router-dom": "5.0.0",
+    "redux": "4.0.1",
+    "react-redux": "7.0.3",
+    "@babel/core": "7.4.4",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-env": "7.4.4",
+    "babel-loader": "8.0.5",
+    "lodash": "4.17.11"
+  },
+  "description": "WIP",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demetrios711/Cryptid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demetrios711/Cryptid/issues"
+  },
+  "homepage": "https://github.com/demetrios711/Cryptid#readme"
 }
